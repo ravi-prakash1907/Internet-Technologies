@@ -9,6 +9,6 @@
 > onclick="document.getElementById('demo').innerHTML = Date()">
 > Click me to display Date and Time.</button>
 >
-> <p id="demo">hi</p>
+> <p id="demo">hi</p>   <!--  This HI will be overwritten!  -->
 >
 >```
