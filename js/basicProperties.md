@@ -6,7 +6,7 @@
 > eg.:
 >```
 > <button type="button"
-> onclick="document.getElementById('demo').innerHTML = Date()">
+> onclick="document.getElementById('demo')_**.innerHTML**_ = Date()">
 > Click me to display Date and Time.</button>
 >
 > <p id="demo">hi</p>
