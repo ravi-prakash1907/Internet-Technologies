@@ -55,11 +55,17 @@ Some unique operators:
  var x; // _(typeof x = undefined)_
 ```
 2. instanceof
-``` x = 5; // _(x instanceof Number = true)_ ```
+```
+x = 5; // _(x instanceof Number = true)_
+```
 3. in
-```  	"PI" in Math; ```
+```
+"PI" in Math;
+```
 4. yield
-``` yield x;  // it's **Pause Function** ```
+```
+yield x;  // it's **Pause Function**
+```
 
 
 <hr />
@@ -67,22 +73,22 @@ Some unique operators:
 
 
 
-## _Few Key Terms:_
+## Few Key Terms:
 
-.getElementBYId()
-.getElementByClass()
-.innerHTML
-.getElementByClass('pic')**.src** = 'otherPic.jpg'    // Changing html attribute
-.getElementByClass('text')**.style** _.fontsize__ = '12px'    // Changing css property
-
-```
-_function_ <name> (<parameters>) {
-  <body>  // parameters are declared with 'var' while above
-}
-```
-onclick()
-onsubmit()
-document.write()  // it writes over the entire document i.e. deletes all existing HTML
-window.alert()
-console.log()
-.concat()         // 'x'.concat('y','z') = 'x'+'y'+'z' = 'xyz'
+> .getElementBYId()
+> .getElementByClass()
+> .innerHTML
+> .getElementByClass('pic')**.src** = 'otherPic.jpg'    // Changing html attribute
+> .getElementByClass('text')**.style** _.fontsize__ = '12px'    // Changing css property
+>
+ ```
+ _function_ <name> (<parameters>) {
+   <body>  // parameters are declared with 'var' while above
+ }
+ ```
+> onclick()
+> onsubmit()
+> document.write()  // it writes over the entire document i.e. deletes all existing HTML
+> window.alert()
+> console.log()
+> .concat()         // 'x'.concat('y','z') = 'x'+'y'+'z' = 'xyz'
