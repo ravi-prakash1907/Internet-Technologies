@@ -48,6 +48,12 @@ JavaScript programmers tend to use __camel case__ that starts with a lowercase l
   var car = {type:"Fiat", model:"500", color:"white"};
   // written as   name:value   pairs  --->  as dictionary
   //  car.model;   =  objectName["propertyName"];  // it's "500", both are CORRECT
+
+  // string, Number & Boolean variables are not declared in OBJECTS
+  // correct way is:
+  var x = new String();        // Declares x as a String object
+  var y = new Number();        // Declares y as a Number object
+  var z = new Boolean();       // Declares z as a Boolean object
 ```
 
 
@@ -64,6 +70,12 @@ var person = {
     return this.firstName + " " + this.lastName;
   }
 };
+
+// method is called as:
+var myName = person.fullName();
+
+
+var myName = person.fullName;   //it'll return Function DEFINATION
 ```
 
 
