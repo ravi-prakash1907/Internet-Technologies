@@ -43,6 +43,27 @@ JavaScript programmers tend to use __camel case__ that starts with a lowercase l
  var num;    //  'num' will have the value ```undefined```
 
   var x = 2 + 3 + '5';     // result into **55**
+
+  //  OBJECTS
+  var car = {type:"Fiat", model:"500", color:"white"};
+  // written as   name:value   pairs  --->  as dictionary
+  //  car.model;   =  objectName["propertyName"];  // it's "500", both are CORRECT
+```
+
+
+## **this** Keyword
+
+In a function definition, this refers to the "_owner_" of the function.
+```
+//  here the owner is 'person'
+var person = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
 ```
 
 
@@ -66,6 +87,27 @@ x = 5; // _(x instanceof Number = true)_
 ```
 yield x;  // it's **Pause Function**
 ```
+
+## Datatypes
+1. Premitive
+_string, number, boolean, undefined_
+2. Complex
+_function, object_
+```
+/*  PREMITIVE   */
+typeof "John"              // Returns "string"
+typeof 3.14                // Returns "number"
+typeof true                // Returns "boolean"
+typeof false               // Returns "boolean"
+typeof x                   // Returns "undefined" (if x has no value)
+
+/*  COMPLEX   */
+typeof {name:'John', age:34} // Returns "object"
+typeof [1,2,3,4]             // Returns "object" (not "array", see note below)
+typeof null                  // Returns "object"
+typeof function myFunc(){}   // Returns "function"
+```
+
 
 
 <hr />
@@ -92,4 +134,8 @@ yield x;  // it's **Pause Function**
 > window.alert()
 > console.log()
 > .concat()         // 'x'.concat('y','z') = 'x'+'y'+'z' = 'xyz'
+
+## Strange Facts:
 > typeof null                // **OBJECT**
+> null === undefined         // false
+> null == undefined          // true
