@@ -39,7 +39,7 @@ JavaScript programmers tend to use __camel case__ that starts with a lowercase l
  numName = 'MyNum',
  numLimit = "infinity" **;**
 
-> /*_Both are correct!!_*/
+ /*_Both are correct!!_*/
  var num;    //  'num' will have the value ```undefined```
 
   var x = 2 + 3 + '5';     // result into **55**
@@ -92,3 +92,4 @@ yield x;  // it's **Pause Function**
 > window.alert()
 > console.log()
 > .concat()         // 'x'.concat('y','z') = 'x'+'y'+'z' = 'xyz'
+> typeof null                // **OBJECT**
