@@ -30,32 +30,36 @@ JavaScript programmers tend to use __camel case__ that starts with a lowercase l
 1. Can contain _doller_ symbol as well
 2. **Must not** begin with a Digit
 3. The Variables' declaration can span into multiple lines **without** semi colon (_;_). Eg.:
-> //First
-> var num1 = 10, numName = 'MyNum', numLimit = "infinity" **;**
->
-> //  Second
-> var num1 = 10,
-> numName = 'MyNum',
-> numLimit = "infinity" **;**
->
-> /*_Both are correct!!_*/
-> var num;    //  'num' will have the value ```undefined```
+```
+ //First
+ var num1 = 10, numName = 'MyNum', numLimit = "infinity" **;**
 
->  var x = 2 + 3 + '5';     // result into **55**
+ //  Second
+ var num1 = 10,
+ numName = 'MyNum',
+ numLimit = "infinity" **;**
+
+> /*_Both are correct!!_*/
+ var num;    //  'num' will have the value ```undefined```
+
+  var x = 2 + 3 + '5';     // result into **55**
+```
 
 
 ## Operators
 
 Some unique operators:
-1. typeof           
-> typeof 42; // _number_
-> var x; // _(typeof x = undefined)_
-2. instanceof      
-> x = 5; // _(x instanceof Number = true)_
+1. typeof
+```
+ typeof 42; // _number_
+ var x; // _(typeof x = undefined)_
+```
+2. instanceof
+``` x = 5; // _(x instanceof Number = true)_ ```
 3. in
->  	"PI" in Math
+```  	"PI" in Math; ```
 4. yield
-> yield x;  // it's **Pause Function**
+``` yield x;  // it's **Pause Function** ```
 
 <hr />
 
