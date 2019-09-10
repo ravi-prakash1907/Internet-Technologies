@@ -70,11 +70,13 @@ Some unique operators:
 .innerHTML
 .getElementByClass('pic')**.src** = 'otherPic.jpg'    // Changing html attribute
 .getElementByClass('text')**.style** _.fontsize__ = '12px'    // Changing css property
+
 ```
 _function_ <name> (<parameters>) {
   <body>  // parameters are declared with 'var' while above
 }
 ```
+
 onclick()
 onsubmit()
 document.write()  // it writes over the entire document i.e. deletes all existing HTML
