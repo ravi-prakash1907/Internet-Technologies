@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tables</title>
+    <script type="text/javascript">
+      function function1(){
+        var normal = [];
+        data = "";
+        for(var i=5; i<=15; i++){
+          for(var j=1; j<11; j++){
+            data += i*j + ", ";
+          }
+          normal.push(data);
+          data = "";
+        }
+
+        for(i=0; i<15; i++){
+          data = normal[i] + "\n";
+        }
+
+        window.alert(data);
+      }
+    </script>
+  </head>
+  <body>
+    <button type="button" id="table" name="button" onclick="function1()">Print Tables</button>
+  </body>
+</html>

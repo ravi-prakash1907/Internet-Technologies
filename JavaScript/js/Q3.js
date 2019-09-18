@@ -1,0 +1,37 @@
+function beg() {
+  var num = prompt('Enter the number of elements in the array!');
+  var arr = prompt('Enter the array elements (numbers) in following formet.\n eg: 2,4,....').split(',');
+
+  for (var i = 0; i < num; i++) {
+    arr[i] = parseInt(arr[i]);    // without this, eg., 37 will be treated as 3...
+  }
+
+  sort(num, arr);
+}
+
+// Bubble Sort
+function sort(num, arr){
+  var temp;
+
+  for (var i = 0; i < num-1; i++) {
+    for (var j = 0; j < num-i-1; j++) {
+      if (arr[j] > arr[j+1]) {
+        temp = arr[j+1];
+        arr[j+1] = arr[j];
+        arr[j] = temp;
+      }
+    }
+  }
+
+//////////////////////////////////////////////////
+
+  var S = "";
+
+  for (i = 0; i < num; i++) {
+    if(i == 0)
+      S += arr[i];
+    else
+    S += " : " + arr[i];
+  }
+  document.getElementById('sol').innerHTML = S;
+}

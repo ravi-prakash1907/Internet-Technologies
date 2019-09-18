@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Factorial</title>
+    <link rel="stylesheet" href="css/fact.css">
+    <script type="text/javascript">
+      function largest(){
+        var sol = 1;
+        num = document.getElementById('num').value;
+
+        if(num > 0)
+          for (var i = 1; i <= num; i++) {
+            sol *= i;
+          }
+
+          window.alert(sol);
+
+      }
+    </script>
+  </head>
+  <body>
+  <h1>Find Factorial</h1>
+  <div class="form fact">
+    <form class="" id="form" action="" method="post" onsubmit="largest()">
+      <legend>
+        <input type="number" id="num" name="" value="" placeholder="Enter Number to find it's Factorial" /> <br />
+
+        <input type="submit" name="submit" value="Submit"/>
+      </legend>
+    </form>
+  </div>
+  </body>
+  </html>

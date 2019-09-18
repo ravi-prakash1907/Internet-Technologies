@@ -1,0 +1,55 @@
+<!--    WORKING   -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Q2</title>
+    <script type="text/javascript">
+      function largest(){
+        var sol = " ";
+        var num = [];
+        num[0] = document.getElementById('num1').value;
+        num[1] = document.getElementById('num2').value;
+        num[2] = document.getElementById('num3').value;
+
+        if (num == null || num == "") {
+
+          alert("Name must be filled out");
+
+        } else {
+
+          if (num[0] > num[1]) {
+            if(num[0] > num[2])
+              sol = num[0] + " is Largest";
+            else
+              sol = num[2] + " is Largest";
+          } else {
+              if(num[1] > num[2])
+                sol = num[1] + " is Largest";
+              else
+                sol = num[2] + " is Largest";
+          }
+          if (num[1] == num[2] && num[1] == num[0])
+            sol = "All 3 numbers are equal!";
+
+          window.alert(sol);
+        }
+
+      }
+    </script>
+  </head>
+  <body>
+<h1>Find Largest</h1>
+    <form class="" id="form" action="" method="post" onsubmit="largest()">
+      <legend>
+        <input type="number" id="num1" name="" value="" placeholder="Enter First Number" /> <br />
+        <input type="number" id="num2" name="" value="" placeholder="Enter First Number" /> <br />
+        <input type="number" id="num3" name="" value="" placeholder="Enter First Number" /> <br />
+
+        <input type="submit" name="submit" value="Submit"/>
+      </legend>
+    </form>
+
+  </body>
+</html>

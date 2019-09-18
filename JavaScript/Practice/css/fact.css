@@ -1,0 +1,17 @@
+/*    For Factorial   */
+
+h1 {
+  text-align: center;
+
+}
+
+.fact{
+  text-align: center;
+  width: 60%;
+  margin: 20% 5%;
+  padding: 2%, 0;
+}
+
+input{
+  margin: 3px;
+}

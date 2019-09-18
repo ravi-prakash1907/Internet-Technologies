@@ -1,0 +1,34 @@
+/*   Basic level formatting and layout   */
+/*
+body {
+  background-color: red;
+}
+
+*/
+#mainDiv {
+
+  background-color: grey;
+
+  padding: 3%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-style: solid;
+  text-align: center;
+  align-items: center;
+}
+
+.click {
+  width: 40%;
+}
+
+#button {
+  margin-top: 2%;
+  width: 25% !important;
+}
+
+#ex {
+  width: 50%;
+  margin-left: 10%;
+}

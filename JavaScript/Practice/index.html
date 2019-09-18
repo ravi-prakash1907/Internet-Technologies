@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Working for Dummies</title>
+    <link rel="stylesheet" href="css/master.css">
+
+    <script type="text/javascript">
+
+
+
+    function fact(x){
+      var result = 1;
+      for(var i=1; i<=x; i++)
+        {result *= i;}
+
+      document.getElementById('factorial').innerHTML = "<b><font color='red'>".concat(result, "</font></b>");
+      return;
+    };
+
+
+      function eg1() {
+        document.getElementById("table").innerHTML = "You clicked it!";
+        /* document.write("It ain't Clicked."); */
+        return;
+      }
+
+    </script>
+  </head>
+  <body>
+
+    <div id="mainDiv">
+    <pre>
+      <form class="" action="" method="post">
+
+        <select class="click" name="choice" label="<-Choose->">
+          <optgroup label="example">
+            <option value=""></option>
+          </optgroup>
+        </select>
+
+        <button id="button">Show Now</button>
+
+      </form>
+      </pre>
+    </div>
+
+    <div id="ex">
+
+
+      <div class="eg1">
+        <p id="table">
+          <script>
+            document.write("It ain't Clicked.");
+          </script>
+        </p>
+        <button id="b1" onclick="eg1()">implement .innerHTML</button>
+
+      </div>
+
+      <div class="eg2">
+        <button id="button" onclick="window.alert('Hello World!');">alert()</button>
+      </div>
+
+      <div class="eg3">
+        <button id="button" onclick="console.log('Written on Console by 3rd button!');">Write on console: console.log()</button>
+      </div>
+
+      <div class="eg4">
+        <p>5! (5 factorial) = <span id="factorial">?</span></p>
+        <button id="button" onclick="fact(5);">Show result!</button>
+      </div>
+
+
+
+    </div>
+  </body>
+</html>
