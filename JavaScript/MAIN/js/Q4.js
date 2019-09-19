@@ -5,8 +5,8 @@ class Stack {
   }
 
   push(val){
-    this.count += 1;
-    this.data[this.count] = val;
+    //this.count += 1;
+    this.data[++this.count] = val;
   }
 
   pop(){
@@ -27,17 +27,18 @@ class Stack {
       S = "";
     } else {
       var S = "";
-      for (var i = 0; i <= this.count; i++) {
-        if(i == 0)
+      for (var i = this.count; i >= 0; i--) {
+        if(i == this.count)
           S += this.data[i];
         else
-          S += ", " + this.data[i];
+          S += "<br />" + this.data[i];
       }
     }
     document.getElementById('stackElements').innerHTML = S;
   }
 
 }
+
 const s = new Stack();
 
 function pushIt(){
