@@ -1,0 +1,8 @@
+label::before, input::after {
+  content: "";
+}
+
+.form {
+  width: 70%;
+  margin: 3% 15%;
+}

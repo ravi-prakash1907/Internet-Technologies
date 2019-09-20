@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>User View for Our Web site</title>
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/Q6.css">
     <script type="text/javascript" src="js/Q6.js"></script>
   </head>
   <body>
@@ -12,46 +13,46 @@
       <form class="" id="form" action="#" method="post" onsubmit="auth()">
         <h3>Fill the details below!</h3> <br />
         <label for="fname">First Name: </label>
-        <input type="text" name="fname" id="fname" value="" />
+        <input type="text" name="fname" id="fname" value="" /><br />
         <label for="lname">Last Name: </label>
-        <input type="text" name="lname" id="lname" value="" />
+        <input type="text" name="lname" id="lname" value="" /><br />
         <label for="email">E-Mail Addr.: </label>
-        <input type="email" name="email" id="email" value="" />
+        <input type="email" name="email" id="email" value="" /><br />
         <label for="addr">Address: </label>
-        <input type="text" name="addr" id="addr" value="" />
+        <input type="text" name="addr" id="addr" value="" /><br />
         <br />
-        <label for="state">State: </label>
+        <label for="state" it="loc">State: </label>
         <input type="text" name="state" id="state" value="" />
-        <label for="PIN">Postal Code: </label>
+        <label for="PIN" it="loc">Postal Code: </label>
         <input type="text" name="PIN" id="PIN" maxlength="6" value="" />
-        <label for="country">Country: </label>
+        <label for="country" it="loc">Country: </label>
         <input type="text" name="country" id="country" value="" />
         <br />
-        <h4>Select the appropriate option:</h4> <br />
+        <h4>Select the appropriate option:</h4>
         <input type="radio" id="radio1" name="buyOnline" value="1">
-        <label for="radio1">I regularly purchase items online.</label>
+        <label for="radio1">I regularly purchase items online.</label><br />
         <input type="radio" id="radio2" name="buyOnline" value="2">
-        <label for="radio2">I have on occasion purchased items online.</label>
+        <label for="radio2">I have on occasion purchased items online.</label><br />
         <input type="radio" id="radio3" name="buyOnline" value="3">
-        <label for="radio3">I have not purchased any item online, but I would consider it.</label>
+        <label for="radio3">I have not purchased any item online, but I would consider it.</label><br />
         <input type="radio" id="radio4" name="buyOnline" value="4">
-        <label for="radio4">I prefer to shop in real stores.</label>
+        <label for="radio4">I prefer to shop in real stores.</label><br />
         <br />
-        <h4>I'm interested in (Choose all that apply) -</h4> <br />
+        <h4>I'm interested in (Choose all that apply) -</h4>
         <input type="checkbox" name="cb1" id="cb1" value="1">
-        <label for="radio1">Hiking</label>
+        <label for="radio1">Hiking</label><br />
         <input type="checkbox" name="cb2" id="cb2" value="2">
-        <label for="radio1">Mountain Biking</label>
+        <label for="radio1">Mountain Biking</label><br />
         <input type="checkbox" name="cb3" id="cb3" value="3">
-        <label for="radio1">Camping</label>
+        <label for="radio1">Camping</label><br />
         <input type="checkbox" name="cb4" id="cb4" value="4">
-        <label for="radio1">Rock Climbing</label>
+        <label for="radio1">Rock Climbing</label><br />
         <input type="checkbox" name="cb5" id="cb5" value="5">
-        <label for="radio1">Off-Road 4WD</label>
+        <label for="radio1">Off-Road 4WD</label><br />
         <input type="checkbox" name="cb6" id="cb6" value="6">
-        <label for="radio1">Cross-country Skiing</label>
+        <label for="radio1">Cross-country Skiing</label><br />
         <br />
-        <h4>I learn+ed about this site from: </h4> <br />
+        <h4>I learned about this site from: </h4>
         <select id="source" name="source">
           <optgroup label="src">
             <option value="">&lt;Choose Applicable&gt;</option>
@@ -60,8 +61,8 @@
             <option value="3">Other</option>
           </optgroup>
         </select>
-        <br/ >
-        <textarea name="comment" id="comment" rows="8" cols="80"></textarea>
+        <br/ ><br />
+        <textarea name="comment" id="comment" rows="8" cols="80" placeholder=" Give us youe valuable feedback here!!"></textarea>
         <br/ ><br />
         <button type="button" id="submit" name="" onclick="submitted()">Submit</button>
         <button type="button" id="reset" name="" onclick="resetIt()">Start Over</button>
