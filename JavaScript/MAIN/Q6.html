@@ -23,7 +23,7 @@
         <label for="state">State: </label>
         <input type="text" name="state" id="state" value="" />
         <label for="PIN">Postal Code: </label>
-        <input type="text" name="PIN" id="PIN" value="" />
+        <input type="text" name="PIN" id="PIN" maxlength="6" value="" />
         <label for="country">Country: </label>
         <input type="text" name="country" id="country" value="" />
         <br />
@@ -54,6 +54,7 @@
         <h4>I leared about this site from: </h4> <br />
         <select id="source" name="source">
           <optgroup label="src">
+            <option value="">&lt;Choose Applicable&gt;</option>
             <option value="1">Ads</option>
             <option value="2">Friend</option>
             <option value="3">Other</option>
@@ -62,8 +63,8 @@
         <br/ >
         <textarea name="comment" id="comment" rows="8" cols="80"></textarea>
         <br/ ><br />
-        <button type="button" id="submit" name="" onclick="window.alert('To be Updated!')">Submit</button>
-        <button type="button" id="reset" name="" onclick="window.alert('To be Updated!')">Start Over</button>
+        <button type="button" id="submit" name="" onclick="submitted()">Submit</button>
+        <button type="button" id="reset" name="" onclick="resetIt()">Start Over</button>
       </form>
     </div>
   </body>
