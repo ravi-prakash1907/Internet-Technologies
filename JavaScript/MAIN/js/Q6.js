@@ -29,6 +29,12 @@ function resetIt() {
       id = ch+i;
       document.getElementById(id).checked = false;
       }
+
+    var ch = 'cb';
+    for (var i = 1; i < 7; i++) {
+      id = ch+i;
+      document.getElementById(id).checked = false;
+    }
 }
 
 function blanckCheck() {

@@ -5,7 +5,6 @@ class Stack {
   }
 
   push(val){
-    //this.count += 1;
     this.data[++this.count] = val;
   }
 
@@ -29,12 +28,13 @@ class Stack {
       var S = "";
       for (var i = this.count; i >= 0; i--) {
         if(i == this.count)
-          S += this.data[i];
+          S += "  <font size='6px'>" + this.data[i] + "</font>";
         else
-          S += "<br />" + this.data[i];
+          S += "<br />  <font size='6px'>" + this.data[i] + "</font>";
       }
     }
     document.getElementById('stackElements').innerHTML = S;
+    document.getElementById('stackElements').style.color = 'teal';
   }
 
 }

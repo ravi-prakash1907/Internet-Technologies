@@ -1,0 +1,19 @@
+.img {
+  height: 80%;
+  padding-bottom: 15%;
+  margin: 5% auto 10% auto;
+}
+
+#imgInMotion {
+  padding-top: 15%;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 5%;
+  font-weight: lighter;
+}
+
+em {
+  text-decoration: underline;
+}

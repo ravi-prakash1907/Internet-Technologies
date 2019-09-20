@@ -1,6 +1,6 @@
 function beg() {
-  var num = prompt('Enter the number of elements in the array!');
-  var arr = prompt('Enter the array elements (numbers) in following formet.\n eg: 2,4,....').split(',');
+  var num = prompt('Enter the number of elements in the array!\n');
+  var arr = prompt('Enter the array elements (numbers) in following formet.\n eg: 2,4,....\n\n').split(',');
 
   for (var i = 0; i < num; i++) {
     arr[i] = parseInt(arr[i]);    // without this, eg., 37 will be treated as 3...
@@ -31,7 +31,11 @@ function sort(num, arr){
     if(i == 0)
       S += arr[i];
     else
-    S += " : " + arr[i];
+    S += "<font color='red'> : </font>" + arr[i];
   }
-  document.getElementById('sol').innerHTML = S;
+  if(S != ""){
+    document.getElementById('array').innerHTML = 'Shorted Array:\n';
+    document.getElementById('sol').innerHTML = S;
+    document.getElementById('sol').style.font.size = '24px';
+  }
 }
