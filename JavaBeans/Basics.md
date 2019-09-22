@@ -14,14 +14,14 @@
 **A JavaBeans class must contain it's Getter and Setter methods**
 
 ####Getters:
->    public
->    return-type must not be void
->    getXYZ()
+> Public
+> Return-type must not be void
+> GetXYZ()
 
 ####Setters:
->    public
->    return-type is void
->    setXYZ(<param>)
+> Public
+> Return-type is void
+> SetXYZ(<param>)
 
 eg.:
 ```
