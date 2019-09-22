@@ -202,7 +202,7 @@ public class Q1{
                             "\n3) Account No. having Maximum and Minimum Balance" +
                             "\n4) Search an Account" +
                             "\n5) Accounts having at least a Specific Balance" +
-                            "\n  * Somthing else, to EXIT" +
+                            "\n\n*  Somthing else, to EXIT" +
                             "\n  ____________________\n");
         choice = s.nextInt();
 
