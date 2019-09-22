@@ -9,7 +9,7 @@
   > In this way, we can persist any Java object for future use or recreate it from an existing source.<br />
   [Also, check this image i.e. taken from Geeks for Geeks](src/serialize-deserialize-java.png)
 > 2.  It can only have a public and non parametarized constructor.
-> 3.  All properties in java bean must be private with public getters and setter methods.
+> 3.  All **properties in java bean must be private** with **public getters and setter methods**.
 
 **A JavaBeans class must contain it's Getter and Setter methods**
 
