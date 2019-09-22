@@ -15,14 +15,14 @@
 
 ####Getters:
 
-> Public
-> Return-type must not be void
+> public.
+> Return-type must not be void.
 > getXYZ()
 
 ####Setters:
 
-> Public
-> Return-type is void
+> public.
+> Return-type is void.
 > setXYZ(<param>)
 
 eg.:
