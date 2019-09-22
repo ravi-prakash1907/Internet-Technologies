@@ -13,13 +13,13 @@
 
 **A JavaBeans class must contain it's Getter and Setter methods**
 
-#### Getters:
+### Getters:
 
 > * public
 > * Return-type must not be void
 > * getXYZ()
 
-#### Setters:
+### Setters:
 
 > * public
 > * Return-type is void
