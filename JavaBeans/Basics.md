@@ -15,15 +15,15 @@
 
 #### Getters:
 
-> public
-> Return-type must not be void
-> getXYZ()
+> * public
+> * Return-type must not be void
+> * getXYZ()
 
 #### Setters:
 
-> public
-> Return-type is void
-> setXYZ(<param>)
+> * public
+> * Return-type is void
+> * setXYZ(<param>)
 
 eg.:
 ```
