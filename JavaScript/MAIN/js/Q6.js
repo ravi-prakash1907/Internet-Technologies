@@ -7,9 +7,14 @@
 
 function submitted() {
   var err = 'Fill it!';
-  var ok = 'Front End Organization required!';
+  var ok = 'Thanks for your submission!';
   var result = blanckCheck();
-  (result == 0) ? window.alert(err)  : window.alert(ok);
+  if (result == 0)
+    window.alert(err)
+  else {
+    resetIt();
+    window.alert(ok);
+  }
 }
 
 function resetIt() {

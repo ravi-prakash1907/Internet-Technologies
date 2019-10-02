@@ -34,7 +34,7 @@ function sort(num, arr){
     S += "<font color='red'> : </font>" + arr[i];
   }
   if(S != ""){
-    document.getElementById('array').innerHTML = 'Shorted Array:\n';
+    document.getElementById('array').innerHTML = 'Sorted Array:\n';
     document.getElementById('sol').innerHTML = S;
     document.getElementById('sol').style.font.size = '24px';
   }
