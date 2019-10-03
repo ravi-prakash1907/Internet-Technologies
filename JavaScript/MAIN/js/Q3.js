@@ -1,6 +1,6 @@
 function beg() {
   var num = prompt('Enter the number of elements in the array!\n');
-  var arr = prompt('Enter the array elements (numbers) in following formet.\n eg: 2,4,....\n\n').split(',');
+  var arr = prompt('Enter ' + num + ' array elements (numbers) in following formet.\n\n eg: 2,4,....\n\n\n').split(',');
 
   for (var i = 0; i < num; i++) {
     arr[i] = parseInt(arr[i]);    // without this, eg., 37 will be treated as 3...

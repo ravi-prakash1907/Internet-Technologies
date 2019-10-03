@@ -1,4 +1,3 @@
-//  To be Implemented
 function varify() {
   var name = document.getElementById('name').value;
   var rollno = document.getElementById('rollno').value;

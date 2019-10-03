@@ -1,5 +1,3 @@
-//  to be implemented
-
   var fname, lname, email, addr, state, pin, country, comment, dropDown;
 
 /////////////////////////////////////////
@@ -64,10 +62,8 @@ function blanckCheck() {
   }
 
   if (fname == '' || lname == '' || email == '' || addr == '' || state == '' || pin == '' || country == '' || comment == '' || rdo == '' || dropDown == '') {
-    //window.alert('Fill it!');
     return 0;
   }  else  {
-    //window.alert('Front End Organization required.');
-      return 1;
-    }
+    return 1;
+  }
 }
