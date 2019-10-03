@@ -2,6 +2,47 @@ import java.lang.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+class BankAccount {
+
+  private int accountNumber;
+  private float balance;
+
+  //  Constructor
+  BankAccount(){
+    this.accountNumber = 0;
+    this.balance = 0.0f;
+  }
+
+  //  Methods
+  public float Deposit(float x){
+    this.balance += x;
+    return this.balance; // new balance i.e. updated
+  }
+
+  public float Withdraw(float x){
+    this.balance -= x;
+    return this.balance; // new balance i.e. left
+  }
+
+  public int getAccountNo(){
+    return this.accountNumber;
+  }
+
+  public float getBalance(){
+    return this.balance;
+  }
+
+  public void taxDeduction(){
+    // function to calculate the tax
+  }
+
+
+  public void setAccountNo(int x){
+    this.accountNumber = x;
+  }
+}
+//  Ends BankAccount
+
 class Bank {
   private int countAccount;
   Scanner s = new Scanner(System.in);
@@ -9,47 +50,6 @@ class Bank {
   Bank(){
     countAccount = -1;
   }
-
-  class BankAccount {
-
-    private int accountNumber;
-    private float balance;
-
-    //  Constructor
-    BankAccount(){
-      this.accountNumber = 0;
-      this.balance = 0.0f;
-    }
-
-    //  Methods
-    public float Deposit(float x){
-      this.balance += x;
-      return this.balance; // new balance i.e. updated
-    }
-
-    public float Withdraw(float x){
-      this.balance -= x;
-      return this.balance; // new balance i.e. left
-    }
-
-    public int getAccountNo(){
-      return this.accountNumber;
-    }
-
-    public float getBalance(){
-      return this.balance;
-    }
-
-    public void taxDeduction(){
-      // function to calculate the tax
-    }
-
-
-    public void setAccountNo(int x){
-      this.accountNumber = x;
-    }
-  }
-  //  Ends BankAccount
 
   ArrayList<BankAccount> newAcc = new ArrayList<BankAccount>();
 
@@ -75,7 +75,7 @@ class Bank {
         switch (choice) {
           case 1: System.out.println("\nEnter amount (in rs.) to deposit: ");
                   money = s.nextFloat();
-                  System.out.println("\nDeposited: " + b.Deposit(money) + "\n");
+                  System.out.println("\nDeposited!\nNew balance: " + b.Deposit(money) + "\n");
                   break;
 
           case 2: System.out.println("\nEnter amount (in rs.) to withdraw: ");
@@ -83,14 +83,14 @@ class Bank {
                   if(money > b.getBalance())
                     System.out.println("\nNot Sufficient balance. Transaction Failed!!!\n");
                   else
-                    System.out.println("\nDeducted " + money + "Rs.: \nBalance left: " + b.Withdraw(money)+ "\n");
+                    System.out.println("\nDeducted " + money + "Rs.!\nBalance left: " + b.Withdraw(money)+ "\n");
                   break;
 
           case 3: System.out.println("\nTax, to pay: ");
                   b.taxDeduction();
                   break;
 
-          default: System.out.println("\nInvalid choice!");
+          default: System.out.println("\nSigning out of Acc. No. \'" + b.getAccountNo() + "\'");
                    //newAcc.remove(countAccount);
         }
       } while ((choice >= 1) && (choice <= 3));
