@@ -35,7 +35,7 @@ function b2() {
   var num = document.getElementById('num').value;
 
   res += num + "! = <b>";
-  res += fact(num) + "</b>";
+  res += fact(num) + "</b><br />";
   
   disp(res);
 }
