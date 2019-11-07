@@ -1,4 +1,5 @@
-var t = "";
+var projHead = "";
+
 
 var tbl = "<table border='1' class='projects'><tr> <th>Project</th> <th>Language/Technology</th> <th>Explore</th> </tr>";
 
@@ -107,6 +108,7 @@ var jsdep = ["A text editor (eg. <i>Notepad++</i>, <i>Visual Studio Code</i>)", 
 
 var list = "";
 var something = "";
+var link = "";
 
 ////////////////////////////////////////
 
@@ -114,12 +116,12 @@ var something = "";
 var thisProject = '<h1>Description</h1>\
     <div class="dual parent image">\
         <div class="left">\
-            <h4>Project output (pic)</h4>\
+            <h4>Output Screen</h4>\
             <p id="pic"><img src="" id="img" alt="Image will appeare here" /></p>\
         </div>\
         <br />\
         <div class="right">\
-            <h4>Program Description</h4>\
+            <h4 id="projectname">Project Title</h4>\
             <p id="projInfo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> \
         </div>\
         <br />\
@@ -136,11 +138,12 @@ var thisProject = '<h1>Description</h1>\
                 specimen\
                 book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially\
                     unchanged.</p>\
+                    <br /><hr />\
             <p>To run this program, you\'ll need: <br /></p>\
             <ol id="list">\
                 \
             </ol>\
-            <a href="#">Project File(s) link: GitHub</a>\
+            <span id="hyperlink"></span>\
         </div>\
     </div>'
 
@@ -171,7 +174,11 @@ function first() {
 
     buildList(javadep);
 
+    link = "https://github.com/ravi-prakash1907/Internet-Technologies/tree/master/assignment/project1";
+
+    document.getElementById("hyperlink").innerHTML = '<a href="'+link+'" target="_blank">See the source code on <b>Github</b></a>';
     document.getElementById("list").innerHTML = list;
+    document.getElementById("projectname").innerHTML = "CLI Addition";
     document.getElementById("pic").innerHTML = '<img src="src/1.png" id="img" alt="Can\'t load Image" />';
     document.getElementById("projInfo").innerHTML = java1;
     document.getElementById("req").innerHTML = javadis;
@@ -185,7 +192,12 @@ function second() {
     
     buildList(javadep);
 
+    link = "https://github.com/ravi-prakash1907/Internet-Technologies/tree/master/assignment/project2";
+
+    document.getElementById("hyperlink").innerHTML = '<a href="'+link+'" target="_blank">See the source code on <b>Github</b></a>';
+
     document.getElementById("list").innerHTML = list;
+    document.getElementById("projectname").innerHTML = "String Manipulation";
     document.getElementById("pic").innerHTML = '<img src="src/2.png" id="img" alt="Can\'t load Image" />';
     document.getElementById("projInfo").innerHTML = java2;
     document.getElementById("req").innerHTML = javadis;
@@ -199,7 +211,12 @@ function third() {
 
     buildList(beansdep);
 
+    link = "https://github.com/ravi-prakash1907/Internet-Technologies/tree/master/assignment/project3";
+
+    document.getElementById("hyperlink").innerHTML = '<a href="'+link+'" target="_blank">See the source code on <b>Github</b></a>';
+
     document.getElementById("list").innerHTML = list;
+    document.getElementById("projectname").innerHTML = "Player Bean";
     document.getElementById("pic").innerHTML = '<img src="src/3.png" id="img" alt="Can\'t load Image" />';
     document.getElementById("projInfo").innerHTML = beans;
     document.getElementById("req").innerHTML = beansdis;
@@ -213,7 +230,12 @@ function forth() {
 
     buildList(jsdep);
 
+    link = "https://github.com/ravi-prakash1907/Internet-Technologies/tree/master/assignment/project4";
+
+    document.getElementById("hyperlink").innerHTML = '<a href="'+link+'" target="_blank">See the source code on <b>Github</b></a>';
+
     document.getElementById("list").innerHTML = list;
+    document.getElementById("projectname").innerHTML = "Factorial & Table";
     document.getElementById("pic").innerHTML = '<img src="src/4.png" id="img" alt="Can\'t load Image" />';
     document.getElementById("projInfo").innerHTML = js1;
     document.getElementById("req").innerHTML = jsdis;
@@ -227,7 +249,12 @@ function fifth() {
 
     buildList(jsdep);
 
+    link = "https://github.com/ravi-prakash1907/Internet-Technologies/tree/master/assignment/project5";
+
+    document.getElementById("hyperlink").innerHTML = '<a href="'+link+'" target="_blank">See the source code on <b>Github</b></a>';
+
     document.getElementById("list").innerHTML = list;
+    document.getElementById("projectname").innerHTML = "Documentation Site";
     document.getElementById("pic").innerHTML = '<img src="src/5.png" id="img" alt="Can\'t load Image" />';
     document.getElementById("projInfo").innerHTML = js2;
     document.getElementById("req").innerHTML = jsdis;
@@ -235,4 +262,8 @@ function fifth() {
     document.getElementById("selectionBased").style = 'background-color: #474b4f';
     window.location.hash = '#selectionBased';
 }
+
+
+////////////////////////////////////
+
 

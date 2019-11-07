@@ -4,6 +4,12 @@ body {
   background-color: #222629;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: x-large;
+
+  background-image: url("../src/bg.jpg");
+  background-size:     cover;               
+  background-repeat:   no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 
@@ -15,6 +21,7 @@ body {
   box-shadow: 0px 0px 10px white;
   display: inline;
 }
+
 .headerElement:hover {
   filter: brightness(85%);
 
@@ -24,25 +31,30 @@ body {
 /* ******************************* */
 
 
-#about {
+#about, #tableOfContent {
   background-color: #474b4f;
+  opacity: 0.9;
 }
+
+#selectionBased {
+  opacity: 0.9;
+}
+
 /* ************************ */
 
 .links a {
   color: aliceblue !important;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-style: oblique;
   text-decoration: none;
   font-weight: bolder;
 }
 
 .links a:hover {
   color: #474b4f !important;
-  font-style: normal;
+  text-decoration: underline;
 
   transition: ease !important;
-  transition-duration: 0.3s !important;
+  transition-duration: 0.%s !important;
 }
 
 a, a:visited {
@@ -100,7 +112,7 @@ h3{
   font-weight: bold;
 
   transition: ease !important;
-  transition-duration: 0.6s !important;
+  transition-duration: 0.4s !important;
 }
 
 /* ************************ */
@@ -167,6 +179,13 @@ th {
 td, th {
   border: 1px solid rgb(28, 172, 215);
 }
+tr:hover {
+    background-color: 
+    rgba(0, 0, 0, 0.5);
+
+  transition: ease !important;
+  transition-duration: 0.6s !important;
+}
 
 /* *********************** */
 
@@ -187,4 +206,8 @@ button{
 /* ************** */
 #authorName {
   color: rgb(28, 172, 215);
+}
+
+.dependancies {
+  border: 2px dotted;
 }
