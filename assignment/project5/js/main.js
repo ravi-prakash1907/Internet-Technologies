@@ -1,20 +1,19 @@
 var t = "";
 
-var tbl = "<table border='1' class='projects'><tr> <th>Project</th> <th>Language/Technology</th> <th>Explore</th> </tr>"
-var arr2 = ["java", "beans", "js"];
+var tbl = "<table border='1' class='projects'><tr> <th>Project</th> <th>Language/Technology</th> <th>Explore</th> </tr>";
 
-var java = ["Strings", "JavaAlgo"];
-var beans = ["SimpleBean"];
-var js = ["Algo", "Site"];
+var java = ["CLI Addition", "String Manipulation"];
+var beans = ["Player Bean"];
+var js = ["Factorial & Table", "Documentation Site"];
 
 var num = 1;
 var dict = {
     java : function () {
         java.forEach(element => {
            tbl += "<tr>";
-            tbl += "<td>" + element + "</td>";
+            tbl += "<td style='font-weight: bold;'>" + element + "</td>";
             tbl += "<td>JAVA</td>";
-            tbl += "<td><button onclick='";
+            tbl += "<td align='center'><button onclick='";
             tbl += (num == 1) ? "first()" : "second()";
             tbl += "'>Click for Description</button></td>";
            tbl += "</tr>";
@@ -23,18 +22,18 @@ var dict = {
     },
     beans : function () {
            tbl += "<tr>";
-            tbl += "<td>" + "SimpleBean" + "</td>";
+            tbl += "<td style='font-weight: bold;'>" + "SimpleBean" + "</td>";
             tbl += "<td>Java Beans</td>";
-            tbl += "<td><button onclick='third()'>Click for Description</button></td>";
+            tbl += "<td align='center'><button onclick='third()'>Click for Description</button></td>";
            tbl += "</tr>";
            num++;
     },
     js : function () {
         js.forEach(element => {
            tbl += "<tr>";
-            tbl += "<td>" + element + "</td>";
+            tbl += "<td style='font-weight: bold;'>" + element + "</td>";
             tbl += "<td>JavaScript</td>";
-            tbl += "<td><button onclick='";
+            tbl += "<td align='center'><button onclick='";
             tbl += (num == 4) ? "forth()" : "fifth()";
             tbl += "'>Click for Description</button></td>";
            tbl += "</tr>";
@@ -49,6 +48,8 @@ function generateTable(choice) {
     temp.parentNode.removeChild(temp);
 
     document.getElementById("new").innerHTML = '';
+
+    window.location.hash = '#tableOfContent';
 
     switch (choice) {
         case 1:
@@ -111,7 +112,7 @@ var something = "";
 
 
 var thisProject = '<h1>Description</h1>\
-    <div class="dual parent test">\
+    <div class="dual parent image">\
         <div class="left">\
             <h4>Project output (pic)</h4>\
             <p id="pic"><img src="" id="img" alt="Image will appeare here" /></p>\
@@ -175,6 +176,7 @@ function first() {
     document.getElementById("projInfo").innerHTML = java1;
     document.getElementById("req").innerHTML = javadis;
 
+    document.getElementById("selectionBased").style = 'background-color: #474b4f';
     window.location.hash = '#selectionBased';
 }
 
@@ -188,6 +190,7 @@ function second() {
     document.getElementById("projInfo").innerHTML = java2;
     document.getElementById("req").innerHTML = javadis;
 
+    document.getElementById("selectionBased").style = 'background-color: #474b4f';
     window.location.hash = '#selectionBased';
 }
 
@@ -201,6 +204,7 @@ function third() {
     document.getElementById("projInfo").innerHTML = beans;
     document.getElementById("req").innerHTML = beansdis;
 
+    document.getElementById("selectionBased").style = 'background-color: #474b4f';
     window.location.hash = '#selectionBased';
 }
 
@@ -214,6 +218,7 @@ function forth() {
     document.getElementById("projInfo").innerHTML = js1;
     document.getElementById("req").innerHTML = jsdis;
 
+    document.getElementById("selectionBased").style = 'background-color: #474b4f';
     window.location.hash = '#selectionBased';
 }
 
@@ -227,6 +232,7 @@ function fifth() {
     document.getElementById("projInfo").innerHTML = js2;
     document.getElementById("req").innerHTML = jsdis;
 
+    document.getElementById("selectionBased").style = 'background-color: #474b4f';
     window.location.hash = '#selectionBased';
 }
 

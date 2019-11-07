@@ -8,105 +8,116 @@
     <script type="text/javascript" src="js/main.js"></script>
     <title>IT Project Documentation</title>
 </head>
+
 <body onload="off()">
-    <header>
-        <p>this is the constent sticked header for nav</p>
-    </header>
-    <hr />
+    <div class="headerElement">
+        <header>
+            <p>
+                <nav class="links">
+                    <a href="#about">About</a> | 
+                    <a href="#tableOfContent">Project List</a> | 
+                    <a href="#selectionBased">Project Description</a>
+                </nav>
+            </p>
+        </header>
+    </div>
 
-    <div class="about mainLayout">
-        <h1>About</h1>
-        <p>This is a static dummy-site, that is created for submitting as a project work under an <i><b>Internet Technologies Assignment</b></i>, B.Sc. (Honours) Computer Science.<br />
-        Here, all the other problems/projects of the same assignments are also documented, below. </p>
-        <div class="dual">
-            <ul>
-                <li>
-                    <h4>Submitted by:</h4>
-                    <p>
-                        <table border="0" class="bio">
-                            <tr>
-                                <td colspan="2" style="text-transform: uppercase; font-weight: bold;">Ravi Prakash</td>
-                            </tr>
-                            <tr>
-                                <td><b>Roll No.:</b></td>
-                                <td>17013570034</td>
-                            </tr>
-                            <tr>
-                                <td><b>Course:</b></td>
-                                <td>B.Sc. (Honours) Computer Science</td>
-                            </tr>
-                            <tr>
-                                <td><b>Year:</b></td>
-                                <td>3<sup>rd</sup></td>
-                            </tr>
-                        </table>
-                    </p>
-                </li>
-                <li>
-                    <h4>Objective:</h4>
-                    <p>This is a static site. It is mainly created for the purpose of the documentation of the above mentioned IT Assignment.<br />
-                        Here five different projects are described that are made under the same assignment.<br />
-                        These are the working programmes designed using different technologies and programming/scripting languages including Java and .<br /></p>
-                    <p>This site is itself one of those 5 assignments which is developed using just HTML, CSS & <i>JavaScript</i></p>
-                </li>
+    <div id="mainContent">
+        <div class="about divLayout" id="about">
+            <h1>About</h1>
+            <p>This is a static dummy-site, that is created for submitting as a project work under an <i><b>Internet Technologies Assignment</b></i>, B.Sc. (Honours) Computer Science.<br />
+            Here, all the other problems/projects of the same assignments are also documented, below. </p>
+            <div class="dual">
+                <ul>
+                    <li>
+                        <h4>Submitted by:</h4>
+                        <p>
+                            <table border="0" class="bio">
+                                <tr>
+                                    <th colspan="2" style="text-transform: uppercase; font-weight: bold;" id="authorName">Ravi Prakash</th>
+                                </tr>
+                                <tr>
+                                    <td><b>Roll No.:</b></td>
+                                    <td id="rno">17013570034</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Course:</b></td>
+                                    <td>B.Sc. (Honours) Computer Science</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Year:</b></td>
+                                    <td>3<sup>rd</sup></td>
+                                </tr>
+                            </table>
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Objective:</h4>
+                        <p>This is a static site. It is mainly created for the purpose of the documentation of the above mentioned IT Assignment.<br />
+                            Here five different projects are described that are made under the same assignment.<br />
+                            These are the working programmes designed using different technologies and programming/scripting languages including Java and .<br /></p>
+                        <p>This site is itself one of those 5 assignments which is developed using just HTML, CSS & <i>JavaScript</i></p>
+                    </li>
 
-                <!-- For github -->
+                    <!-- For github -->
+                        
+                    <!--
+                        <li>
+                            <h4>Developer</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                industry's standard
+                                unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                                Ipsum passages, and more
+                                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                        </li>
+                        <li>
+                            <h4>This Site</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                industry's standard
+                                unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                                Ipsum passages, and more
+                                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                        </li>
+                    -->
                     
-                <!--
-                    <li>
-                        <h4>Developer</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard
-                            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                            Ipsum passages, and more
-                            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        </p>
-                    </li>
-                    <li>
-                        <h4>This Site</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard
-                            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                            Ipsum passages, and more
-                            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        </p>
-                    </li>
-                -->
-                
-            </ul>
+                </ul>
+            </div>
+        </div>
+
+        <div class="divLayout" id="tableOfContent">
+            <h1>Filter the Projects</h1>
+            <p>There are total <i>five (5)</i> programms designed for the assignmnet.<br /></p>
+            <p>Among these five,<br />
+                3 projects are designed in <u>Java</u>  (<i>including one JAVA-Beans program</i>)<br />
+                2 projects are designed in <u>JavaScript</u><br /></p>
+            <p>To see the list of the project, click the desired button.</p>
+            <div class="dual" align="center">            
+                <nav id="nav">
+                    <button onclick="generateTable(1)">All</a>
+                    <button onclick="generateTable(2)">Java</a>
+                    <button onclick="generateTable(3)">JAVA-Beans</a>
+                    <button onclick="generateTable(4)">JavaScript</a>
+                </nav>
+                <br />
+
+                <div id="new"></div>
+                <br />
+            </div>
+
+            <a href="https://github.com/ravi-prakash1907/Internet-Technologies/tree/master/assignment" target="_blank" class="dual">Link to GitHub repo. of the assignment!!</a>
+        </div>
+
+        <div class="divLayout" id="selectionBased">
         </div>
     </div>
-    <hr />
 
-    <div class="tableOfContent mainLayout">
-        <h1>Filter the Projects</h1>
-        <p>There are total <i>five (5)</i> programms designed for the assignmnet.<br /></p>
-        <p>Among these five,<br />
-            3 projects are designed in <u>Java</u>  (<i>including one JAVA-Beans program</i>)<br />
-            2 projects are designed in <u>JavaScript</u><br /></p>
-        <p>To see the list of the project, click the desired button.</p>
-        <div class="dual" align="center">            
-            <nav id="nav">
-                <button onclick="generateTable(1)">All</a>
-                <button onclick="generateTable(2)">Java</a>
-                <button onclick="generateTable(3)">JAVA-Beans</a>
-                <button onclick="generateTable(4)">JavaScript</a>
-            </nav>
-            <br />
-
-            <div id="new"></div>
-            <br />
-
-            <a href="#">Link to GitHub repo. of the assignment!!</a>
-        </div>
+    <div class="footerElement">
+        <footer>
+            <p id="horizontalRow"><hr /></p>
+            <p style="float: right; padding-right: 3%;">&copy;Ravi</p>
+        </footer>
     </div>
-    <p id="horizontalRow"><hr /></p>
-
-    <div class="selectionBased mainLayout" id="selectionBased"></div>
-
-    <footer>
-        <p id="horizontalRow"><hr /></p>
-        <p style="float: right; padding-right: 3%;">&copy;Ravi</p>
-    </footer>
 </body>
 </html>

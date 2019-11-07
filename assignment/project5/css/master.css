@@ -1,7 +1,76 @@
 /*    Basic styling     */
 body {
-  width: 80%;
-  margin: 0 auto;
+  color: white;
+  background-color: #222629;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: x-large;
+}
+
+
+
+/* ******************************* */
+.headerElement {
+  background-color: #86c232;
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0px 0px 10px white;
+  display: inline;
+}
+.headerElement:hover {
+  filter: brightness(85%);
+
+  transition: ease !important;
+  transition-duration: 0.3s !important;
+}
+/* ******************************* */
+
+
+#about {
+  background-color: #474b4f;
+}
+/* ************************ */
+
+.links a {
+  color: aliceblue !important;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: oblique;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.links a:hover {
+  color: #474b4f !important;
+  font-style: normal;
+
+  transition: ease !important;
+  transition-duration: 0.3s !important;
+}
+
+a, a:visited {
+  color: rgb(28, 172, 215);
+}
+a:hover {
+  color: #86c232;
+
+  transition: ease !important;
+  transition-duration: 0.6s !important;
+}
+
+header {
+  text-align: center;
+  color: aliceblue;
+}
+
+.footerElement {
+  color: #86c323;
+  font-weight: bold;
+  font-style: italic;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 42px;
+  text-decoration: underline;
+
 }
 
 h3{
@@ -9,19 +78,105 @@ h3{
   text-decoration: underline;
 }
 
-label::before, input::after {
-  content: "\A";
-  white-space: pre;
+/* ******************************* */
+
+.bio {
+  background-color: inherit;
 }
+
+.bio td {
+  border: none;
+}
+
+.bio:hover, .bio #rno:hover {
+  filter: brightness(185%);
+  backdrop-filter: glow;
+
+  transition: ease !important;
+  transition-duration: 0.6s !important;
+}
+.bio #rno:hover {
+  color: rgb(28, 172, 215);
+  font-weight: bold;
+
+  transition: ease !important;
+  transition-duration: 0.6s !important;
+}
+
+/* ************************ */
+h1:hover {
+  color: #86c323;
+
+  transition: ease !important;
+  transition-duration: 0.6s !important;
+}
+
+h1:hover::before {
+  content: "[ ";
+  color: #86c323;
+
+  transition: ease !important;
+  transition-duration: 0.4s !important;
+}
+h1:hover::after {
+  content: " ]";
+  color: #86c323;
+}
+
+h1::before {
+  content: "[ ";
+  color: #61892f;
+}
+h1::after {
+  content: " ]";
+  color: #61892f;
+}
+/* ************************ */
+#about ul {
+  border-left: solid #6b6e70;
+}
+/* ************************ */
+h4:hover {
+  color: white;
+
+  transition: ease !important;
+  transition-duration: 0.4s !important;
+}
+
+ul li {
+  color: white;
+}
+
+h4 {
+  color: #ba83fa;
+  text-decoration: underline;
+}
+ul {
+  color: #ba83fa;
+}
+/* ************************ */
+
+table {
+  border: 1px solid rgb(28, 172, 215);
+  background-color: rgb(0, 0, 0, 0.3);
+}
+th {
+  color: rgb(28, 172, 215);
+  text-decoration: underline;
+}
+td, th {
+  border: 1px solid rgb(28, 172, 215);
+}
+
+/* *********************** */
 
 button{
   text-align: center;
   padding: 3px;
   margin: 3% 3% 3% 0;
-}
-
-th {
-  text-decoration: underline;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bold;
+  box-shadow: none;
 }
 
 #img {
@@ -29,6 +184,7 @@ th {
   width: 430px;
 }
 
-/* Testing */
-
-/* ENDS Testing */
+/* ************** */
+#authorName {
+  color: rgb(28, 172, 215);
+}
