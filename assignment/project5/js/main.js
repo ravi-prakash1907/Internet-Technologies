@@ -1,6 +1,3 @@
-var projHead = "";
-
-
 var tbl = "<table border='1' class='projects'><tr> <th>Project</th> <th>Language/Technology</th> <th>Explore</th> </tr>";
 
 var java = ["CLI Addition", "String Manipulation"];
