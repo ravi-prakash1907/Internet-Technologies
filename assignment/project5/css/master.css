@@ -183,6 +183,11 @@ th {
   color: rgb(28, 172, 215);
   text-decoration: underline;
 }
+
+th a:hover {
+  color: rgb(30, 191, 240);
+}
+
 td, th {
   border: 1px solid rgb(28, 172, 215);
 }
