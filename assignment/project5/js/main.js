@@ -10,6 +10,7 @@ var js = ["Factorial & Table", "Documentation Site"];
 var num = 1;
 var dict = {
     java : function () {
+        num = 1;
         java.forEach(element => {
            tbl += "<tr>";
             tbl += "<td style='font-weight: bold;'>" + element + "</td>";
@@ -21,7 +22,8 @@ var dict = {
            num++;
         });
     },
-    beans : function () {
+    beans: function () {
+           num = 3;
            tbl += "<tr>";
             tbl += "<td style='font-weight: bold;'>" + "SimpleBean" + "</td>";
             tbl += "<td>Java Beans</td>";
@@ -29,7 +31,8 @@ var dict = {
            tbl += "</tr>";
            num++;
     },
-    js : function () {
+    js: function () {
+        num = 4;
         js.forEach(element => {
            tbl += "<tr>";
             tbl += "<td style='font-weight: bold;'>" + element + "</td>";
@@ -82,11 +85,11 @@ function generateTable(choice) {
 
 ///////////////////     const values    ////////////////////
 
-var java1 = "<b>java1</b>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
-var java2 = "<b>java2</b>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
-var beans = "<b>beans</b>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
-var js1 = "<b>js1</b>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
-var js2 = "<b>js2</b>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+var java1 = "This is a <b>JAVA</b> program, ran through Command Line to add the integers. To run this program, we first need to compile it using<br /> <code>$ javac <fileName>.java</code> <br />As the program is compiled and has generated the <i>byte code</i>, we can simpally run it. In <i>run</i> command, it takes the <i>number of arguments</i> i.e. to be added.<br />As in the demonstrated example, we've run:<br /> <code>$ javac proj1.java</code> <br /> <code>$ java proj1 4</code> <br /><i>(* here '4' is number of integers, to be added!)</i><br />In this way, we can add arguments, dynamically, using this program.";
+var java2 = "This is a program, made to implement few basic & most used <i>string manipulations</i> in <b>JAVA</b>. It shows the usage/working of the functions like <code>concat()</code>, <code>setCharAt()</code>, <code>append()</code> etc..<br />We can run this program by following commands:<br /><code>$ javac proj2.java</code> <br /> <code>$ java proj2</code>";
+var beans = "This is a <b>JAVA</b> program, that defines and implements a <i>bean</i> called \"Player\". The bean implements <i>java.io.Serializable</i> class.<br />It consists the player\'s Jersey No., Name & Sport.<br />It's run in the same way, as we run a normal java code, using <code>Test.java</code> file.";
+var js1 = "This is a little web-page, build to implement 2 of the common mathamatics utilities i.e. <i>Factoral</i> & <i>Table</i> (upto 10 terms). Although, the page is made using HTML & CSS, but the main functionalities are provided using <b>JavaScript</b><br />The source-code of the same is available at 'js/main.js', by clicking the GitHub link, below.";
+var js2 = "This is a single-page static site, made to do the <i>documention</i> of the projects made under the above-mentioned Information Technology Assignment. It is, currently running locally.<br /> This site uses a bulk of the HTML, CSS and JavaScript codes. The major page-rendering and functionalities are provided by <b>Javascript</b> & <b>CSS</b>, that make page user friendly and manipulate the things in such a way, as if page is working in a dynamic way.<br /><br /> <small><a href=\"https://github.com/ravi-prakash1907/Internet-Technologies/blob/master/assignment/project5/js/main.js\" target=\"_blank\"><i><b>Click to view the JavaScript code</i></b></a></small>";
 
 
 var javadis = "<b>Java</b> is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible. ... A virtual machine, called the <i>Java Virtual Machine</i> (JVM), is used to run the bytecode on each platform.<br />\

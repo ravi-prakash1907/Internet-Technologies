@@ -16,7 +16,7 @@ body {
 
 /* ******************************* */
 .headerElement {
-  background-color: #86c232;
+  background-color: #97190c;
   border-radius: 0 0 50px 50px;
   box-shadow: 0px 0px 10px white;
   display: inline;
@@ -30,16 +30,23 @@ body {
 }
 /* ******************************* */
 
-
 #about, #tableOfContent {
   background-color: #474b4f;
   opacity: 0.9;
+}
+
+#about, #tableOfContent, #selectionBased {
+  border-radius: 3%;
 }
 
 #selectionBased {
   opacity: 0.9;
 }
 
+#tableOfContent {
+  border-style: double;
+  border-color: #97190c;
+}
 /* ************************ */
 
 .links a {
@@ -50,21 +57,22 @@ body {
 }
 
 .links a:hover {
-  color: #474b4f !important;
+  color: white !important;
   text-decoration: underline;
 
   transition: ease !important;
-  transition-duration: 0.%s !important;
+  transition-duration: 0.4%s !important;
 }
 
 a, a:visited {
   color: rgb(28, 172, 215);
 }
 a:hover {
-  color: #86c232;
+  color: #86c323;
+  font-weight: bold;
 
   transition: ease !important;
-  transition-duration: 0.6s !important;
+  transition-duration: 0.4s !important;
 }
 
 header {
@@ -73,7 +81,7 @@ header {
 }
 
 .footerElement {
-  color: #86c323;
+  color: aliceblue;
   font-weight: bold;
   font-style: italic;
 }
@@ -82,7 +90,6 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 42px;
   text-decoration: underline;
-
 }
 
 h3{
@@ -117,7 +124,7 @@ h3{
 
 /* ************************ */
 h1:hover {
-  color: #86c323;
+  color: rgb(28, 172, 215);
 
   transition: ease !important;
   transition-duration: 0.6s !important;
@@ -125,23 +132,23 @@ h1:hover {
 
 h1:hover::before {
   content: "[ ";
-  color: #86c323;
+  color: rgb(28, 172, 215);
 
   transition: ease !important;
   transition-duration: 0.4s !important;
 }
 h1:hover::after {
   content: " ]";
-  color: #86c323;
+  color: rgb(28, 172, 215);
 }
 
 h1::before {
   content: "[ ";
-  color: #61892f;
+  color: #97190c;
 }
 h1::after {
   content: " ]";
-  color: #61892f;
+  color: #97190c;
 }
 /* ************************ */
 #about ul {
@@ -180,8 +187,7 @@ td, th {
   border: 1px solid rgb(28, 172, 215);
 }
 tr:hover {
-    background-color: 
-    rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5) !important;
 
   transition: ease !important;
   transition-duration: 0.6s !important;
@@ -210,4 +216,17 @@ button{
 
 .dependancies {
   border: 2px dotted;
+}
+
+code::before, code::after {
+  content: "\00a0";
+}
+
+code {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+  padding: 1px;
+  background-color: grey;
 }
