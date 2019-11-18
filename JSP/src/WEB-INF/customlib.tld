@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<taglib xsi:schemaLocation="http://java.sun.com/xml/ns/javaee web-jsptaglibrary_2_1.xsd" 
+    xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+   <tlib-version>1.0</tlib-version>
+   <short-name>Q6</short-name>
+   <uri>tags.practicals</uri>
+   
+   <tag>
+      <name>hello</name>
+      <tag-class>tags.practicals.helloTag</tag-class>
+      <body-content>empty</body-content>
+      
+      <attribute>
+         <name>name</name>
+         <requierd>true</requierd>
+      </attribute>
+   </tag>
+
+   <tag>
+      <name>choco</name>
+      <tag-class>tags.practicals.choco</tag-class>
+      <body-content>empty</body-content>
+      
+      <attribute>
+         <name>texture</name>
+         <requierd>true</requierd>
+      </attribute>
+   </tag>
+
+   <tag>
+      <name>reverse</name>
+      <tag-class>tags.practicals.rev</tag-class>
+      <body-content>empty</body-content>
+      
+      <attribute>
+         <name>input</name>
+         <requierd>true</requierd>
+      </attribute>
+   </tag>
+
+   <tag>
+      <name>today</name>
+      <tag-class>tags.practicals.dateGenerator</tag-class>
+      <body-content>empty</body-content>
+   </tag>
+
+</taglib>

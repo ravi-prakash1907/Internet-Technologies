@@ -1,0 +1,32 @@
+.main {
+    margin: 5% 15%;
+    border-style: dotted;
+    padding: 5%;
+    text-align: center;
+}
+
+.solution {
+    margin: 3% auto auto 5%;
+    text-align: left;
+}
+
+.leftInput {
+    float: left;
+    text-align: left;
+}
+
+/*********** FORM ***********/
+
+
+button {
+    margin: 2% 1%;
+}
+
+input[type=text] {
+    width: 30%;
+}
+
+input {
+    margin: 3%;
+}
+/* *********************** */
