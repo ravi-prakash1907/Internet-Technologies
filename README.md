@@ -1,5 +1,5 @@
 # Internet-Tehnologies
-A BSc (hons) CS Practicals cum Project
+A repository to store BSc (hons) CS Practicals and Project
 
 </hr>
 
