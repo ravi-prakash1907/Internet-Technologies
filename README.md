@@ -5,10 +5,10 @@ A BSc (hons) CS Project.
 
 ## Steps to run the JSP programs
 >
-> Clone and Open the *JSP* directory in terminal/command prompt
-> Execute the following command:
+> 1. Clone and Open the *JSP* directory in terminal/command prompt
+> 2. Execute the following command:
 >       ```docker-compose up```
-> open __*localhost:8888/practicals/*__ in the browser
+> 3. Open __*localhost:8888/practicals/*__ in the browser
 > 
 > * For this, you must have docker installed on your system
 >
