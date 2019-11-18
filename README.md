@@ -1,5 +1,5 @@
 # Internet-Tehnologies
-A BSc (hons) CS Project.
+A BSc (hons) CS Practicals cum Project
 
 </hr>
 
