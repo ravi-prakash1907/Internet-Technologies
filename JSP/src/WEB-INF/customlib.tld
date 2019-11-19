@@ -44,4 +44,23 @@
       <body-content>empty</body-content>
    </tag>
 
+   <tag>
+      <name>reverse</name>
+      <tag-class>tags.practicals.subString</tag-class>
+      <body-content>empty</body-content>
+      
+      <attribute>
+         <name>input</name>
+         <requierd>true</requierd>
+      </attribute>
+      <attribute>
+         <name>start</name>
+         <requierd>true</requierd>
+      </attribute>
+      <attribute>
+         <name>end</name>
+         <requierd>true</requierd>
+      </attribute>
+   </tag>
+
 </taglib>
