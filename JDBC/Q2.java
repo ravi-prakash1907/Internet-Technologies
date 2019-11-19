@@ -28,7 +28,7 @@ public class Q2 {
         ResultSet result;
 
         Class.forName(com.mysql.jdbc.Driver);   // throws exceptions    DatabaseNotFoundException
-        Connection con = DriverManager(url, uname, pass);   // throws exceptions    SQLException
+        Connection con = DriverManager.getConnection(url, uname, pass);   // throws exceptions    SQLException
         
         CallableStatement cStmt = con.prepareCall("{ call counterProcedure(?) }" );    // can throw SQLException
         cStmt.registerOutParameter(1, Type.INTEGER);
