@@ -1,3 +1,5 @@
+//      EDIT IT
+
 import java.mysql.*;
 
 //////////      PROCEDURE       /////////
@@ -28,16 +30,13 @@ public class Q2 {
         Class.forName(com.mysql.jdbc.Driver);   // throws exceptions    DatabaseNotFoundException
         Connection con = DriverManager(url, uname, pass);   // throws exceptions    SQLException
         
-        CallableStatement cStmt = con.prepareCall("{ call counterProcedure }", // call counterProcedure (?)  
-                                ResultSet.TYPE_SCROLL_SENSITIVE,
-                                ResultSet.CONCUR_READ_ONLY);    // can throw SQLException
+        CallableStatement cStmt = con.prepareCall("{ call counterProcedure(?) }" );    // can throw SQLException
+        cStmt.registerOutParameter(1, Type.INTEGER);
 
-        // cStmt.registerOutParameter();
-        result = cStmt.execute();
+        result = cStmt.executeQuery();
+        
         // Main part to COUNT the total rows
-        boolean b = result.last();  // moves curseer to the last row
-        int totalRows = result.getRow(); // returns current Row Number
-
+        int totalRows = result.getInt(1); // returns current Row Number
         system.out.ptint("Total students = ",+totalRows);
 
         con.close();
