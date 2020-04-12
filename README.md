@@ -1,7 +1,7 @@
 # Internet-Tehnologies
 A repository to store BSc (hons) CS Practicals and Project
 
-</hr>
+<hr />
 
 ## Steps to run the JSP programs
 >
