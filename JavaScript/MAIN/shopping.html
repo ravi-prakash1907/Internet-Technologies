@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Online Shopping</title>
+    <link rel="stylesheet" href="css/master.css" />
+    <script>
+        function varify() {
+                var name = document.getElementById('name').value;
+                var pcode = document.getElementById('pcode').value;
+
+                if (name == "" || pcode == "") {
+                    alert("Details are incomlete!");
+                } else {
+                    var n = checkName(name);
+                    var p = checkPCode(pcode);
+
+                    ch = '';
+                    if (n == 1)
+                        ch += 'Name\n';
+
+                    if (p == 1)
+                        ch += 'Product Code\n';
+
+                    if (ch.length >= 1)
+                        alert('Following detail(s) is/are invalid:\n\n' + ch)
+                    else
+                        showConf(name, pcode);
+                }
+            }
+
+            function checkName(x) {
+                var t = x.match(/[^a-z|A-Z|\s]+/g);
+                if (t !== null)
+                    return 1;
+                return 0;
+            }
+
+            function checkPCode(x) {
+                    if (x.length !== 5)
+                        return 1;
+                    return 0;
+            }
+
+            function showConf(name, code) {
+                alert('Order Placed!\n' + 'Name: '+ name + '\nProduct Code: ' + code + '\n\n Thankyou for shoping with us!! :\)')
+                
+            }
+
+    </script>
+  </head>
+  <body>
+    <div class="form">
+      <form class="" id="form" action="#" method="post">
+        <h3>Place an Order!</h3> <br />
+        <label for="name">Name of Product: </label>
+        <input type="text" name="name" id="name" placeholder="Alphabets only" value="" />
+        <label for="pcode">Product Code: </label>
+        <input type="number" name="pcode" id="pcode" maxlength="5" placeholder="5-digit numbers" value="" />
+        <br />
+        <button type="button" id="reset" name="" onclick="varify()">Place Order!</button>
+      </form>
+    </div>
+  </body>
+</html>
