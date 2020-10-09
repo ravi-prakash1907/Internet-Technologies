@@ -34,6 +34,7 @@ class BankAccount {
 
   public void taxDeduction(){
     // function to calculate the tax
+    //this function is declared here but its defination is missing so the output is not coming please have a look into it
   }
 
 
