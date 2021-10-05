@@ -15,3 +15,11 @@ Click here to see the [practical list](./Practical%20List.pdf).
 
 * For this, you must have docker installed on your system  
 
+---   
+
+## Steps to run the JavaScript  
+
+> 1. All JavaScript codes are kept in the [JavaScript](./JavaScript/) directory only.  
+> 2. There is no special dependancy required to be installed.  
+> 3. Ensure that `JavaScript` is not blocked on your browser, else code will not work!  
+
