@@ -23,3 +23,9 @@ Click here to see the [practical list](./Practical%20List.pdf).
 > 2. There is no special dependancy required to be installed.  
 > 3. Ensure that `JavaScript` is not blocked on your browser, else code will not work!  
 
+---  
+
+
+ ### Test Code
+
+ <iframe src="https://ravi-prakash1907.github.io/Internet-Technologies/JavaScript/Practice/fact.html" title="Fact"></iframe>
